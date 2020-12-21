@@ -1,0 +1,165 @@
+<html lang="en">
+
+<head>
+    <link href="/css/style1.css" rel="stylesheet" />
+    <link href="/css/style2.css" rel="stylesheet" />
+    <link href="/css/meadiQueary.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body onload="total()">
+    <!-- Header -->
+    <header id="header">
+        <!-- Navigation -->
+
+        <nav class="nav">
+            <div class="nav__container">
+                <div class="nav__logo">
+                    <img src="https://fabrics-media.moodfabrics.com/blog/wp-content/uploads/mood-sewciety-logo-1.png"
+                        alt="Mood Sewciety">
+                </div>
+                <ul class="nav__container nav__container--nav__menu">
+                    <li><a href="">Free Sewing Patterns</a></li>
+                    <li><a href="">On The Runway</a></li>
+                    <li><a href="">Mood Online School of Sewing</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li class="btn">Shop</li>
+                </ul>
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+        </nav>
+        <!-- End Navigation -->
+    </header>
+    <hr>
+    <div style="display: grid;place-items: center;">
+        <div class="dress__cart" >
+            <div style="display: flex ;justify-content: space-between;">
+                <h5 style="padding: 4px;">
+                    < Add Accessories (Optional)</h5>
+                        <span style="color:black; cursor: pointer;" onclick="closeCart()">&times;</span>
+
+            </div>
+            <hr>
+
+            <div>
+                <div class="dress__allitems">
+                    <div class="dress__cart-items">
+
+                        <input type="checkbox" onclick="subTotal()">
+                        <img src="/images/rustic.jpg" alt="">
+                        <div class="dress__items-details">
+                            <h4>Rustic Satin Ribbon</h4>
+                            <div>
+                                <select id="select1" onclick="quantity('select1','price1','originalprice1')">
+
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+
+                                </select>
+                                <p>$<span id="price1">0.74</span> ($<small id="originalprice1">0.74</small>/yard)</p>
+                                <!-- <small  style="display: flex;float: right;transform: translate(-75px,-30px);"> -->
+                                <p style="float: right;"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dress__cart-items">
+
+                        <input type="checkbox" onclick="subTotal()">
+                        <img src="/images/italic.jpg" alt="">
+                        <div class="dress__items-details">
+                            <h4>Italian Amber Brown Tor...</h4>
+                            <select onclick="quantity('select2','price2','originalprice2')" id="select2">
+
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+
+                            </select>
+                            <p>$<span id="price2">14.94</span> ($<small id="originalprice2">14.94</small>/yard)</p>
+                        </div>
+                    </div>
+                    <div class="dress__cart-items">
+
+                        <input type="checkbox" onclick="subTotal()">
+                        <img src="/images/drwastring.jpg" alt="">
+                        <div class="dress__items-details">
+                            <h4>Natural Drawstring</h4>
+                            <select onclick="quantity('select3','price3','originalprice3')" id="select3">
+
+                                <option>1</option>
+                                <option>1.5</option>
+                                <option>2</option>
+
+                            </select>
+                            <p>$<span id="price3">10.49</span> ($<small id="originalprice3">10.49</small>/yard)</p>
+                        </div>
+
+                    </div>
+
+                    <div class="dress__cart-items">
+
+                        <input type="checkbox" onclick="subTotal()">
+                        <img src="/images/capulet.jpg" alt="">
+                        <div class="dress__items-details">
+                            <h4>Capulet Drive</h4>
+                            <select onclick="quantity('select4','price4','originalprice4')" id="select4">
+
+                                <option>1</option>
+                                <option>1.5</option>
+                                <option>2</option>
+
+                            </select>
+                            <p>$<span id="price4">3.94</span> ($<small id="originalprice4">3.94</small>/yard)</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="btn btn--buy">
+
+                    <button class="btn" onclick="buyNow()">BuyNow</button>
+                    <p style="font-weight:bold">SubTotal:$<strong id="total">0.00</strong></p>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+    <div class="checkout__page" >
+        <div>
+            <div id="totalItems"></div>
+            <div>
+                <div id="checkout"></div>
+
+                <hr>
+                <div class="price__details">
+                    <h2>PRICE DETAILS</h2>
+                    <p style="padding: 10px;">Subtotal<span id="subtotal">$</span></p>
+                    <p style="padding: 10px;">Shipping & Handling Charges<span id="shipping">7.99</span></p>
+                    <strong style="padding: 10px;"> Order Total<span id="orderTotal"></span></strong>
+
+                </div>
+
+                <div class="checkout__subtotal">
+                    <div>
+                        <p>Total</p>
+                        <strong>
+                            <h4 id="totalWithTaxes"></h4>
+                        </strong>
+                    </div>
+                    <button class="btn">Checkout</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

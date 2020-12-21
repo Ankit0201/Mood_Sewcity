@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="/css/style1.css" rel="stylesheet" />
+    <link href="/css/style2.css" rel="stylesheet" />
+    <link href="/css/meadiQueary.css" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body onload="getData()">
+
+    <div >
+        
+ 
+        <div class="wrapper">
+            <div>
+                <a class="wrapper__moodlogo"></a>
+            </div>
+            <div class="wrapper__sewcity">
+                <img src="https://fabrics-media.moodfabrics.com/media/header-images/sewciety-logo.png">
+            </div>
+
+            <div class="wrapper__gift-card">
+                <p>Gift Cards</p>
+            </div>
+
+            <div class="wrapper__gift-card--free-shipping">
+                <span><strong style="font-weight: 600;"><u>FREE SHIPPING</u></strong>
+                    DOMESTIC ORDERS $100+</span>
+            </div>
+
+
+
+        </div>
+
+
+        <!-- Header -->
+        <header id="header">
+            <!-- Navigation -->
+
+            <nav class="nav">
+                <div class="nav__container">
+                    <div class="nav__logo">
+                        <img src="https://fabrics-media.moodfabrics.com/blog/wp-content/uploads/mood-sewciety-logo-1.png"
+                            alt="Mood Sewciety">
+                    </div>
+                    <ul class="nav__container nav__container--nav__menu">
+                        <li><a href="">Free Sewing Patterns</a></li>
+                        <li><a href="">On The Runway</a></li>
+                        <li><a href="">Mood Online School of Sewing</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li class="btn">Shop</li>
+                    </ul>
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+            </nav>
+            <!-- End Navigation -->
+        </header>
+        <hr>
+
+        <!-- main body -->
+
+        <div class="bodycontainer">
+            <div>
+                <ul>
+                    <li><small>Home ></small></li>
+                    <li><small>Design Patterns</small></li>
+                    <li><small>The Water Lily Dress</small></li>
+                </ul>
+            </div>
+            <div class="col2">
+                <div class="dress">
+                    <div>
+                        <h2>THE WATER LILY DRESS – FREE SEWING PATTERN</h2>
+                        <!--  -->
+                        <div class="dress__small-icons">
+                            <div>
+                                <h6> Courtney Norris - Aug 10 2020</h6>
+                            </div>
+                            <div>
+                                <small>Share :</small>
+                                <small><i class="fab fa-pinterest-p"></i></small>
+                                <small><i class="fab fa-instagram"></i></small>
+                                <small><i class="fab fa-twitter"></i></small>
+                                <small><i class="fab fa-facebook"></i></small>
+
+                            </div>
+                        </div>
+
+                        <!--  -->
+                        <div class="dress__lilydress-details">
+                            <div>
+                                <img src="https://fabrics-media.moodfabrics.com/blog/wp-content/uploads/IMG_9238.jpg"
+                                    alt="">
+                            </div>
+                            <article>Lorem Ipsum is simply dummy text of the printing
+                                and typesetting industry. Lorem Ipsum has been the industry's
+                                standard dummy text ever since the 1500s, when an unknown printer
+                                took a galley of type and scrambled it to make a type specimen book.
+                                It has survived not only five centuries, but also the leap into electronic typesetting,
+                                remaining essentially unchanged. It was popularised in the 1960s with the release of
+                                Letrasetsheets containing Lorem Ipsum passages, and more recently with desktop
+                                publishing
+                                software
+                                like Aldus PageMaker including versions of Lorem Ipsum.</article>
+                        </div>
+
+                        <!-- cart page -->
+                        <div class="dress__cart-container">
+                            <div class="dress__cart">
+                                <p style="color:black;float:right;cursor: pointer;" onclick="closeCart()">&times;</p>
+                                <div class="dress__cart-details">
+                                    <h4>MATERIAL USED TO MAKE</h4>
+                                    <small>Size</small>
+                                    <div>
+                                        <button class="btn btn--size-btn" onclick="sizeButton('S_size')">S</button>
+                                        <button class="btn btn--size-btn1" onclick="sizeButton('M_size')">M</button>
+                                        <button class="btn btn--size-btn" onclick="sizeButton('L_size')">L</button>
+                                    </div>
+    
+                                </div>
+                                <div >
+                                     <div class="dress__allitems">
+                                    <div class="dress__cart-items">
+    
+                                       
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS8UnVAXiTk2hTcSRZTuugRP30wrTDz43C7mg&usqp=CAU"
+                                            alt="">
+                                        <div class="dress__items-details">
+                                            <h4>3 Yards Le Muse Cotton Voile</h4>
+                                            <div >
+                                                <select id="select1" onclick="quantity('select1','price1','originalprice1')">
+                                                    <option>3</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+    
+                                                </select>
+                                                <p >$<span  id="price1">29.99</span>  ($<small id="originalprice1">9.99</small>/yard)</p>
+                                                <!-- <small  style="display: flex;float: right;transform: translate(-75px,-30px);"> -->
+                                                    <p style="float: right;"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dress__cart-items">
+    
+                                       
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcScP-LeGJhwORJLRTG5iBAYE0N7zSb7fAWWVw&usqp=CAU"
+                                            alt="">
+                                        <div class="dress__items-details">
+                                            <h4>1 Yard Le Muse Cotton Voile</h4>
+                                            <select onclick="quantity('select2','price2','originalprice2')" id="select2">
+                                                <option>1.5</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+    
+                                            </select>
+                                            <p >$<span  id="price2">12.49</span>  ($<small id="originalprice2">15.99</small>/yard)</p>
+                                        </div>
+                                    </div>
+                                    <div class="dress__cart-items">
+    
+                                       
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQm-H4RR8e27hhIIjvcu-5Fvjy4VV5khrXA5w&usqp=CAU"
+                                            alt="">
+                                        <div class="dress__items-details">
+                                            <h4>1.5 Yards Le Dusty Cotton Voile</h4>
+                                            <select onclick="quantity('select3','price3','originalprice3')" id="select3">
+                                                <option>1</option>
+                                                <option>0</option>
+                                                <option>1.5</option>
+                                                <option>2</option>
+    
+                                            </select>
+                                            <p >$<span  id="price3">15.99</span>  ($<small id="originalprice3">10.49</small>/yard)</p>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                                    <div class="btn btn--buy">
+    
+                                        <button class="btn" onclick="proceed()">Proceed</button>
+                                        <p>Total:$<strong id="total">0.00</strong></p>
+                                    </div>
+    
+                                </div>
+    
+                           
+    
+                            </div>
+                            </div>
+                        <div class="dress__suggestion">
+                           <button class="btn btn--downloadimg" ><i class="fas fa-download"></i></button> 
+                           <button class="btn btn--video"><i class="fas fa-play-circle"></i></button>
+                            <button class="btn btn--purchase" onclick="cartPage()">Buy Now</button>
+                        </div>
+                        <hr>
+                        
+                    </div>
+                    <div class="dress__rightcontent">
+                       
+                        <div id="widgeet">
+                            <a href="" class="btn btn--download">Download Free Pattern</a>
+                            <p class="btn btn--tutorial">Watch Tutorial</p>
+                        </div>
+                        
+                        <div class="dress__deskcart" >
+                            <div class="dress__cart">
+                                <p style="color:black;float:right;cursor: pointer;" >&times;</p>
+                                <div class="dress__cart-details">
+                                    <h4>MATERIAL USED TO MAKE</h4>
+                                    <small>Size</small>
+                                    <div>
+                                        <button class="btn btn--size-btn">S</button>
+                                        <button class="btn btn--size-btn1">M</button>
+                                        <button class="btn btn--size-btn">L</button>
+                                    </div>
+    
+                                </div>
+                                <div >
+                                     <div class="dress__allitems">
+                                    <div class="dress__cart-items">
+    
+                                       
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS8UnVAXiTk2hTcSRZTuugRP30wrTDz43C7mg&usqp=CAU"
+                                            alt="">
+                                        <div class="dress__items-details">
+                                            <h4>3 Yards Le Muse Cotton Voile</h4>
+                                            <div >
+                                                <select id="select1" onclick="quantity('select1','price1','originalprice1')">
+                                                    <option>3</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+    
+                                                </select>
+                                                <p >$<span  id="price1">29.99</span>  ($<small id="originalprice1">9.99</small>/yard)</p>
+                                                <!-- <small  style="display: flex;float: right;transform: translate(-75px,-30px);"> -->
+                                                    <p style="float: right;"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dress__cart-items">
+    
+                                       
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcScP-LeGJhwORJLRTG5iBAYE0N7zSb7fAWWVw&usqp=CAU"
+                                            alt="">
+                                        <div class="dress__items-details">
+                                            <h4>1 Yard Le Muse Cotton Voile</h4>
+                                            <select onclick="quantity('select2','price2','originalprice2')" id="select2">
+                                                <option>1.5</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+    
+                                            </select>
+                                            <p >$<span  id="price2">12.49</span>  ($<small id="originalprice2">15.99</small>/yard)</p>
+                                        </div>
+                                    </div>
+                                    <div class="dress__cart-items">
+    
+                                       
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQm-H4RR8e27hhIIjvcu-5Fvjy4VV5khrXA5w&usqp=CAU"
+                                            alt="">
+                                        <div class="dress__items-details">
+                                            <h4>1.5 Yards Le Dusty Cotton Voile</h4>
+                                            <select onclick="quantity('select3','price3','originalprice3')" id="select3">
+                                                <option>1</option>
+                                                <option>0</option>
+                                                <option>1.5</option>
+                                                <option>2</option>
+    
+                                            </select>
+                                            <p >$<span  id="price3">15.99</span>  ($<small id="originalprice3">10.49</small>/yard)</p>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                                    <div class="btn btn--buy">
+    
+                                        <b  >Buy Now</b>
+                                        <p style="color:white">Total:$<strong id="total" >58.20</strong></p>
+                                    </div>
+    
+                                </div>
+    
+                           
+    
+                            </div>
+                            </div>
+                        <div class="free-service">
+                            <h5>Free service Pattern</h5>
+                            <h4>Active wear & Athleisure</h4>
+                            <hr>
+                            <h4>basic Sewing Pattern</h4>
+                            <hr>
+                            <h4>Complay Pattern</h4>
+                            <hr>
+                            <h4>Dress Pattern</h4>
+                            <hr>
+
+                            <select>
+                                <option value="More">More</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+
+
+
+
+                    <div class="dress__steps">
+                        <small>STEP 1/N</small>
+                        <h2>Create ruffles</h2>
+                        <p>First create each ohter of your skirt ruffles by attching two half
+                            circle at the sides with French seams .Press each seam and hem th eouter
+                            edge of each ruffle layer
+                        </p>
+
+                        <img style="margin-bottom: 10px;"
+                            src="https://fabrics-media.moodfabrics.com/blog/wp-content/uploads/20200803_133232a.jpg"
+                            alt="">
+                        <hr>
+                    </div>
+
+                    <div class="dress__steps">
+                        <small>STEP 2/N</small>
+                        <h2>Join The Extension</h2>
+                        <p>Create two separate skirt extensions, attaching the front and back pieces at the sides.
+                            The front portion should point up while theback points down. Since the skirt is unlined,
+                            I recommend using French seams here as well.</p>
+
+                        <img style="margin-bottom: 10px;"
+                            src="https://fabrics-media.moodfabrics.com/blog/wp-content/uploads/20200805_150629a.jpg"
+                            alt="">
+                        <hr>
+                    </div>
+                    <div class="dress__steps">
+                        <small>STEP 3/N</small>
+                        <h2>Blind the dress</h2>
+                        <p>
+                            Attach one of your skirt ruffles along the bottom edge of one of your skirt extensions. This
+                            will be your middle ruffle, so if you’re doing contrasting layers, be sure to attach
+                            accordingly. Since this part can get tricky, I recommend using regular face-to-face seams
+                            and binding them with bias tape when your dress is complete.
+
+                        </p>
+
+                        <img style="margin-bottom: 10px;"
+                            src="https://fabrics-media.moodfabrics.com/blog/wp-content/uploads/20200805_151406.jpg"
+                            alt="">
+
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+            
+            <!--Table  -->
+            <div class="middle-container">
+            <div class="table">
+                <select>
+                    <option>See the specifications for size</option>
+                </select>
+
+                <img src="https://fabrics-media.moodfabrics.com/blog/wp-content/uploads/2018/01/Mood-Pattern-Size-Chart-1.png"
+                    alt="">
+            </div>
+
+
+            <!--design Pattern  -->
+            <div class="design">
+                <div class="design__alternative">
+                    <h2><span>ALTERNATIVE FABRICS USED FOR DESIGN PATTERNS</span></h2>
+                </div>
+                <div class="design__col-3">
+                    <section>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR-8LzB4QWTIuOYTwYIravyHXI3PsQXrMD5LA&usqp=CAU"
+                            alt="">
+                        <h4>Voile</h4>
+                    </section>
+                    <section>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS8UnVAXiTk2hTcSRZTuugRP30wrTDz43C7mg&usqp=CAU"
+                            alt="">
+                        <h4>Batiste</h4>
+                    </section>
+                    <section>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSmj9Vm2R1y-e6ieQCMexADLTYDac18iw9ciQ&usqp=CAU"
+                            alt="">
+                        <h4>Chifflon</h4>
+                    </section>
+                </div>
+            </div>
+
+            <!-- comment-like  details -->
+            <div class="comment">
+                <hr>
+                <div class="comment__status">
+
+                    <div>
+                        <i class="far fa-comment"><small>5 comments</small></i>
+                    </div>
+                    <div>
+                        <i class="fas fa-heart"></i><small>5 </small>
+                    </div>
+                    <div>
+                        <small>Share :</small>
+                        <small><i class="fab fa-pinterest-p"></i></small>
+                        <small><i class="fab fa-instagram"></i></small>
+                        <small><i class="fab fa-twitter"></i></small>
+                        <small><i class="fab fa-facebook"></i></small>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="comment__testomonials">
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQfXL1iflbD4TSMWUsPxxVmAbqud5nrxacEQw&usqp=CAU"
+                            alt="">
+                    </div>
+                    <div>
+                        <b>Courtney Norris</b>
+                        <p>
+                            One of the top trends we were seeing before the pandemic hit was billowing trapeze dresses,
+                            and just as comfy clothing continues to be a fashion favorite, these dresses are…rends often
+                            come and go, but one trend has stood out.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Leave commentt -->
+            <div id="comment" class="design">
+                <div class="design__alternative">
+                    <h2><span>LEAVE US COMMENT</span></h2>
+                </div>
+
+                <div>
+                    <form id="myform" onsubmit="addComment(event)">
+
+                        <input class="comment__name" type="text" id="fname" name="firstname" placeholder="Name*">
+                        <textarea class="comment__name comment__name--comment-text" placeholder="Your Comment"
+                        id="cnttxt" type="text" rows="5" cols="5"></textarea>
+                        <input class="btn btn--submit" id="coment" type="submit" value="Comment">
+                    </form>
+                </div>
+
+                <div class="design__alternative">
+                    <h2  ><span id="total-comment">1 COMMENTS</span></h2>
+                </div>
+
+                <!-- Two Comments -->
+                <div id="testomonials">
+                <div class="comment__testomonials" >
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQfXL1iflbD4TSMWUsPxxVmAbqud5nrxacEQw&usqp=CAU"
+                            alt="">
+                    </div>
+                    <div>
+                        <small>Deirdre A Murr . Sep 6</small>
+                        <strong>
+                            Wow so beautiful!
+                        </strong>
+
+                        <small >Reply 
+                            <span onclick="deleteComment()" style="float: right;"><i class="far fa-trash-alt"></i></span></small>
+                        <div>
+                        <!-- <input class="replyy" id="reply" type="text"> -->
+                    </div><br>
+                
+                    </div>
+
+
+                </div>
+              </div>
+                <hr>
+               
+
+
+            </div>
+
+            <!--  -->
+            <div class="design">
+                <div class="design__alternative">
+                    <h2><span>YOU MAY ALSO LIKE</span></h2>
+                </div>
+                <div class="design__col-3">
+                    <section>
+                        <img src="https://fabrics-media.moodfabrics.com/blog/wp-content/uploads/IMG_5854.jpg" alt="">
+                        <h4><b>Bellium Dress</b> </h4>
+                        <small>August 24, 2019</small>
+                    </section>
+                    <section>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRrNXo6BYk5THfaVuOuRzH1DHqZ_lByO7pwHw&usqp=CAU"
+                            alt="">
+                        <h4><b>The Daenerys Cosplay</b></h4>
+                        <small>Jan 14,2020</small>
+                    </section>
+                    <section>
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUSExMVFRUXFx0YFxcXFxcXGBYeGBcaFxgVGBodHSggGB0lHRgXITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQFS0dHR8tLS0tLS0rLS0tLS0tLS0tLS0tLSsrLTYtLS0tLS0tKy0rLS0tLS0tLS0tLSstLSstLf/AABEIALcBEwMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAAAQIEBQMGB//EAEUQAAEDAgMEBwQHBgQGAwAAAAEAAhEDIQQSMQVBUWEGEyJxgZGhMrHB8AcjQlJy0eEUJDNigrI1U3SSFXOis7TxNEPS/8QAGAEBAAMBAAAAAAAAAAAAAAAAAAECAwT/xAAgEQEBAAIDAAMBAQEAAAAAAAAAAQIRAyExEjJBIlEE/9oADAMBAAIRAxEAPwDwYQEIhXVJILX2Js+jXrUKGao11VwY5wDS1hc4gQDdwjLJkangqNTqsvY6zNmFnZYLSDJtoZy2vqb2QU3KJWltfBtpdTlJ+soNqnNFi5z2kCALdkeazigk1SKAEygSYCIRCARCZCECKEFScgUIhNDkCKiXIKSC/sTFdXWpv0yvaT3Tf0lfWNsDO0udULWhoEBwbO8zPGwXxpm9fTdh4hmLwwlrHVGU8ri6JBFieUi/iqZteK96V8O6o+jkOJJyvDqbTlLWkAjLIuJki69Nhg17G1Ih2+NbLxlLZQEuNMR94GI8viFuYTHxTAF3cO9ZxrndLHSPb37M1r8jajc0OYYIOZroF+4nwC+YbQxxrVC8gNG5osGgXyj1JO8kle5+kbDGngKT3amuM53DMxwHgLBfOvnVa4ufK3x0HxQhvyU5HNWVHcpOcNFEqVN0bkESEFSi9k23+fNByISAXTu+e5QAhQIlG/eplsFIa3sgrEc0IQg6uTCaCpGz0Kb+/wCF/wCew+AcCSsSCLEQRYg6jktfYOwH4x/VUqtBtQzlp1HPa58DMS2GFpsDaZsbK3i+iTqTzTqYzAMe0w5prvlp4GKVig09nPqDFbOpguDKmGpsqM+y9jn1g4PGjhldv0sV57oxRDm1m5Sa5ojqmg5Xkiow1WskE9Z1YdDQJIzgaqWO6NV6dI1oZWozBq0Xtq0weDi27d3tALIIUDQ2vXc5zGvpOpvpsDDnnrHQ5xaXyAZAIaLey1qopRwTJUgRC6YemHEAvawHVzw8tHfka53kCtjpX0cOCfSY6q2o6pT6w5AQ0AkgQTd0wbwEGEUwpJIENUFMBNAoQAlCbkEZQSiFLIL8kt0SbV6laIbqXaDuv8IXqfosykYgVpaahaWOBgjKHSO4yLcl4TH1ndYC3UX+AW7s7akCRbeYsQVXvKdNJrGvc7Z2bUb2mPmmd4sRyP5rY6HbMa7tOdMDTmvH4TbDnNLZzDUg6jmtro/tNzHZRvWXlXvcbv0oOZ/w/qjcue0jwmT5L4k2vkrZfsua0kc4iRwOi+jdLdoOrEg3DQQF832xRHWtg7gD4SPcr4+VS9abpwpiWkEc7EedvVcurcLwY8wtDBWY0E7vhofVQuHkePhuWuP9TbPOfG6U6am1WcRSuIsSJ74j81UhLNIlSA71CU5S81CQ4A7/ANFA6pxdRIUBsF9UwTwCi0KU/P5IK10kHxQgswghCTlI9J9Gf+K4T8VT/wAeqs7pUf37F/6ir/3XLS+jP/FMJ+Kp/wCPVWb0p/8AnYv/AFNX/uuUC10G2y7DYymdadVwpVmH2XsectxocuaR3EbzL+kHYbcHjqlJlqbgKtMfda8kZe4Oa8DkAsvYeGNTE0KbRJdVpt83gE+Ak+C9T9MWLbU2iWtM9XRZTdydmfUPpUag8ns7Z9Wu4spMzENLnGQ1rGjV73OIaxo4kgK9iOj9YUnV29XVpMIFR1GoyqKc/fDTLRziOa9Js3D0aew31KhqtFfEhtR1FjHvhnsMcHPaMkiddXaXVXott3A4Ko9/77VZUpOpvpupYdrXB0a/XmdD/uKDxr969z9Kf8bCf6On/c9eGAgeC9x9Kn8XCf6Kn73oKPQXoqcdXGaG0Wmal4LgL9WwTMneRoJvMTQ2t0cxNAOqVKQbTDoDutov1MNs15cfJbH0T/4nS/DU/sK8piQBUfYTmd7ygMJhX1XBlNhe46Bok8zyA1k2AuVpO6NV+ofiG9VUp046w0q1Ooac73hpNuYnjpdGwMXiG9bh8NTzvxFM0nAMLn5b5spHsi9zpYcJXqOiezTRwm1c9Si5xwZmnTqCo5kNqe2WywXtAcTrMIPn2VD3AFSAkgcUYqkM5b/KHN/JTvtMn64Pqkm+i6UqovmFhf11Pmqx4rpQbmzt35PjdVy8Xx9V9o4TK8cwuLKRHz71qxnw7HHVpjwnL8Qh+zngTCYTcV5Oq4YV72uDxqPmCF7zZLfYq5SGuExw3Eea8GwQV6LYe1nU4Y4ktJ01IPJTljuGGWr2vdJa7GMPE3HcDJXhNn0zUrNm9yT898L1G0B1r3l28RHAcB6eKyOjlGMSWnc0j1F/couPxxTMvlk2W0r1Gj7Ia4f03PnJUCyc53iw9CrFJv8AHfOstHuXKmYY7x9Fbiv4jln6qtd277mKGOphryBobjx/WR4LphWZnzyHvXDFPnK/cS+O4PJHvCnO9xWTqoBRKTQifn4KobzKccbqJKDylAC9k2nWeBhJE+cH3IK8FCMyEFgJFTyjifJLIOPog9B0CxmHw+LpYmvXFNtIuOQU6r3vzUnMEFrS1o7c3M9nS8rvt6hs+viKtentDIKj3PyOwuIJaXGSJaDNydw1XmQ0Tr6fqkWjj6fqg9Hs3auFwJNXDl2JxMEMqvp9XRo5hBc1hJc98EiTAv3z5ivWc9znvJc5zi5xNySTJJ5kqZYOJ8v1V1+AYylTqVXPJqyabG5WnK1xYajiQ6AXBwaIvlcZFpDY6JdIqVOjWwWLY6phaxBOX26bxEVG8fZaeRaDe4PDaOE2bTaXUsVXxBM5WdSaIBixqPeLgfytk8tVlYllDKw0zVDzmztflcLZchaWtbrL7ESMvNcf2cxmh2WYzZYHITpuKCNCm1xAc9rAdXODyB4Ma5x8BvXrfpA2phcSaL6FfMaVFtIsdTqsc7KTDmkty7zMkab15WnQzezmceAbPuKTKWbST3CdbINfoZtluExlLEOBLGyHgaw5pbI4kSD4Ql0gw+EDnvw+KNYOeXNZ1NRhaCZh7nwLC0tBnksmrRLSWuDmkagtgjvBNrK9tvBU6VZ1NhdlDabhmgnt0mVDJEA3cdwQbPQXbGGojF0sS51NuIoim2sxpeadnh1hLr5wbD7AlWej+0MDhv2nDGvUezE0HUnYkUXNbTsQ3LRu93tOk2uGiLkjx9WlESHCRIlsSOIvcW15KZwjg4NLamYiQ3IZI4gakWKCVOm3roY4vaDZxaWZoGuWTAnj6aLl7Qo1N47B9y77LYC+02HAclXpuyVH0jpmzN7j8jyKpb/TXGfw4spS1w4FLCdmq0+B8bKzSs4yDBXPE4V+oaeOmlx+vkrZWaRhLtbo4XsVafHNB4Zm2/6gr+EdnotdxaJ8lxp12l2WbloJ8Dv81y2LXin1R1ZLefZcRHorcF7sV/6J1KpV6EyQrOzKZDc58O5ciyXFu7fyCvtNoGnzZaydsbegTOip4NkYsHiw+8fqrQaW7rKrhKzHYtsEGKZmN3aG/RU5PqtxfZpgfV1B/MAD4z+ShVjK6+93vKMA+S5jtM5/uMfBWXta4VABBYTPi0O95WOGfxdGePyZkZab3DWLd8W9V1xmHAoZd9It9QJ9T6J4SCym2B2qhP8AS2/5Lrg39ZVxLDoYHdZMs90mGpYxGpgKBeQSCBIMHwQKp1srsXVjbfMqDgkKp5eSfXnl5BAoUt/gfcVF1d3L/a38k6dQk7tDuHBBwhC6l/P0CEHVBQFIKREhRUiUpQRK2Mb+80aDmQatGl1D6cgOLWPe+nVpjWoCKhDgLgtmIMrHJ8VEaKBar4Usa0viXE/VgjOAIu4AyyZgA3sfH0RrMbjq1YuBwr21Yj2X0nU3ClQA3Paerbk1aWA2AleVB4KSDX2C8FvU1Wk0n1WE1WODalB4DgKt7FgDnSHQLWLSF02Gx374ym4unDOEgkB8V6MGDe4mBreN6w1dwGM6ttUFs9ZSNPWMvbY/NpcywCOZ5QFnauInD4em4zVp9YDvcxji3qqTt8giocv2Q8DkLu0qZdj2BtVlMkUAKjspawihSGYz2TDgRfeIMLz8KMINrajAMLh2aGnVrtc0ua5zS4UnNzAezMO43DrlOtiGvw1OtmHXUQ7CkT2nMcC6k+OApmvTn+WmsMLtVrghoDMoAvcuLydXGdLACBp4lBbwFLK2eN+7gsvajs7yGjtMEg/e3ub5QfNbVTFZWszN9oTI3cAvPtoua5xmXDtT3krG3t0yamouYev1gpu55Xd4C1G1deTWnw7QKxcFGZ4Fs0PA4EGHeYPotVn8Vw4058j+qhaM3Su0za890KL6mWq/vnzEn1JTc3t+Dh5tKobQeX1Gbg5oLj55vcVfjvbPknTawwlub71/DcnUxrW2HaPLQd5WXXxjn9lnZYLczHw5KeHp5b710fJzaSxr3vHaNvuiw8kdHWRXn+QqNYyu2wbV/wCk+8LPPxph62mCHzxInxDVwwFQziz/ADO9GhqvNb9b3Nn58lQwrY68fefHmAVg3V8TjBS6sHcyf9xM+4K10aByuqHWo4u8BYLD2jhzVxfV7g1oPcBmPvXoMPXDXwBAAAA7kFDb2Hy1M253vGvwPiqDQvRbZpB7DGoGbyufSV5wLXG9MM5qpBASTKsqSbNfP3FJNmqBR3poQg7gLvWpANYd7m5yc7f8yqyAyMxtTmZ38lwsujn5ss/ZbkHdne+/G73eikdqeFBpF+8F2pAADWB0aSXOJygWuQueFohweT9hoMZmsmajKd3OBA9ufBJtY5cloknS8kAemUKNOrlzCAQ4AEGdz2v3EEXYPVBLCUA+qxhsHPDbEGxdGsQbb9Fxe0bhGhjO2pz1aAPBTo1i14eIlrg4C8SDIGskeK5n8IG6G5viSfVAhoru0MGKZseUFwJdABLgAOy2TF+G+6pQu2IrFzi4xJ1jlb8kExhvqy/fNhB9luUOM/ifTjufwTwlJriQQTDXOsQ32GOfvafux4o/aXQANA3KG3iO0bib3c4zxNogRzoVMpJG9rhf+dhYY5w4qBKgxpcAQYJiM0G9hePgirSGctFhmy3MnWJmB5QosfBDuBB8jZBqy4u3zPKZn3qRLH0Qx5a3QEi72vJgkScoGXuK6YnCZWsI+0GC5EkvaXEtbE5WwATOr28VwxFXM4uIaCbnLmuSZJu4+kLtTrlzmZoGQCI1hrYA8YHkoTJutba1IdWzveO4MFP/APfhHl53HnJVjWGM8c9NtQ+RfHgtjE4hzg0AwGlxGv2sk/2DzKzNoUwQ95N+yALCzWNYAPBoWDqrPfiMj6bx96CO+xXov/vbO9hHrPwXmKVQF7G/zL0WPqBvVVPuuAP9XYn1KIlcX04rxzn0MrJxFLsNPNzfCc0eq3MQJqyBYg+4/PzfOxIimP8AmH+1Th6ryfWq9PSAu7GEqFJpKuMELpkc1rhVZlElcdiv+vP4fiF0xN09lUYqGNYn1Cpn4vh63qhIqVCdCxoHAXIP9w8lS2Y+TUn/ADD8QPSFqVSC3NxI9LLOwVLLnN7vJ466e9YN3n8bj+rxVR4jWO/sgK3T6TH/AC557153EAGo9zt73GJ5mFo7NxtNr2ktEC1hJHO/DVW0rK3MPto1HsDWyHGHCNxsVQc2CRwW7gKYc3O2pmAva3mFgNCtgpyfiQTQE1dmigFMoCB5UIg80IOqkFFSBUhQk5SSKCI1QDqhySBu1QhiYQScEmjzTKJQIpR+acpAqAiFY2b/ABADoZHoq5UqVTK4O4FL4mXVPaeFL3kte4DSAJj1WRjdmEGDVdOt+fivZOp9kkEXFj8V52tgXEkkye9YbdNjzoa5jwRJykGY4XXsMRiAGtm4c9seeafRedxTMkydbQtHCv6xlIH7OYeIbb3DzVr4rj1W9WHskc/VqzMYyWR/OPcQtDDVMzB88ll7RxGRhdwcPfCjH2LZ+VOmyBougaT/AOlVwu0qTtQfFd342LNaAurpxrLcNA5+CqbJqH9pcODfirmGcQMz9IJuNyy9h1Jrvduj4qnJ9V+P7PSYwWa0bzPgLn3qvRu944wfSy7uM335YHjcn3KlsermNSpuLyB3Dsj0aFzuh4vEM+tqAzZ7rf1Fb2D2U0tBk35R+ahXwU1HVGAFpeZI1mStTDWEu8la1GMWdibPFJ5IJMiCNyxQvUMdlYXuEdknnovLtVsGfJ+JBMBAKArsyIRCaEAUIhCDpKlbRQCaBlIoSKAJUFIlRzIJAqUqAUkEiE7KKCgZKRKEpQCRQkEGtst8tLd407ju966VWRqFm4CtleNwNj46esLariW313rHOdunju8XlNqYeSTzkKrsytlkcO14sOb1gjxXoa+EtuWXR2U91R2QCwBIPPh5KJSztrYd0OLdxuFSxWUgh0QXNBnm4KQDmtaHgte1o1ETAuJ3qvtRs5m8wP8AqUz2Jy8d/wDgzJs4jvuPzVmlgqbDM5jwUaNX6sZjcW710bTgZl19f44qq7UrF3ZHj+S5bHp5XP7h8VYDNXFGzvaee6fIlZcvjXi9bFI6cmrIonq8M878zyP9zgFpCuABO8fqqAoRSYypmERMceJWMb1k7AqFgIcdSvXmkQbARuMX81587HBByHdIvqeC19g43M3qn2c3SdbbkpC2oYouvckD1n3ArBAWv0gqWa3mXeVh7yshaYeMeS9mEykiVZQ0JSkEEo70JApoJBSlRQEEj3KMpykgiUiEyolBKVKVFSQMJk8gojgmSgbikUihAFRUlEoAlbOFxGZoJ/CTwP6rGhdsHiMhM+yfaHuPgq5TcXwy1Wq6lrClhhklw1Mek/ElNogSCC2PmFS66ZJsBosXTWsMS2q2C0Aj4KjisFQqiJyv4t4jjuKp4V3ZnmtDYeznV67aLRdxvfcLn094UxWsYYDEy6mKTqsXz02uI04ceQlRw2MD25efovY9IenLqGKdQZTyiiQ3hcNB0jS/ovNbRp4erWNVrHUS9uZzGDMzt3JEvBEzoLBdEys9YZYzXTMr46xvZaOy9l4p1J72Yes7MbRTfeQBIMQVe2DXw+HLgaAqudJbUe1jXU8rSYYJOsG+sx4Wav0h1KRdTZTkMLh7QGhIlvHRUyu1uOT3bNr4Sox7W1WlrmAdk2OmpCvPYHtjeFs7R2fVxFJuIdE5ZYRrl1k8jdefDyCTodHN58RyKzrazTnS7HGJVw0QXMeCA4Ea7xv8UmQbELnjcSKbCQb6N8fmfBFbWbtmtmqujQdkeGvqSqYUSpBbRzW7NCEFA0ghEIGAhCEE0ShNAiUIKRKBOKi1MoagJU1BSlA0EpKQQRlNCEAVEpqKAlIqSigt4KoMrsxgCL7gpYn2bKtkL6ZYBcuBPdv+PoreIIiCscvXTh9Uabh1ZA8V6Loack1SDMgC8W5ePuXmqbREA33jQ8V6rBANpZSCbbtfJMfV5NvRbT6MYDaE4ku6rEHsvJmHEAAFzQReABmEW1leJ6U7E/YH0uscajHshjqbgWjq/snMJBgjvW7hMfhBAqMrtI1LXuaD37l5jp7iaDn0hh6j3Nhxc17g7KZABBA3j3c1p6y5JqKOEqUq1enT7dNsOuS0ky2IAAAFpO/RelwOxcBSf1jmPqOmfrXdm9/ZEA34yvn9J4a9riJAcCR3HRe8wGDw7YrXqFwkTcCb24qL0cetPpOxtqsrNDWMEgQZFgOHCIXh+lWzmtqvLYse4XvCjhNuOZUsco3t1MfhEwe9Uuk+2OscWNsXe04n2Bw/F7lGV3GtmlOl2gYggjsx824Lzr6hOvktLYrBRpZQ7MTcDUNPCeE3WVJ1OqnHH9c+eX4mFIFQCm0q7MwhJNAk0imEAEIhCCaIQEQgRSUnBRCBFBQglASmEIQEqQUQF0DbIIwgphp4FGU8CoCKRU8h4FLIeB8kEISXTq3cD5FRNN33T5FSChMqxVqk63Vei0yPncurypklnaZlZ4o4ozMan5KsYHaz2ANd9YwbnG4/C7ULjWCrkKPjIn53e2vidu1JIpEtYWx24cbzJn/3osYU10YUEpqFyt9calNJge09lzmzbskieS7uCSI2vu2rWc0MblYIglogu5k7vBRoYTQntd91UZm3BWqT38SFbGT/ABGWVv60WiLRos3GU4cfPzVxvMk+K449s5SO74/mrZeM8fVUFSCiApZVm0SCAiEQgCm3VRTZqO9A0KJCFA79a6NT5pdYeJ80kIA1DxPmouqk6knxTQgjnPEpEniUIQMPPFGczqU0IGarvvHzKbXniUIQHWHiUxUPEoQgGuPFLMeKEIAuKjmQhApKsOE3QhWxQq1WhVXIQlSiZ5KJqoQoCbWldA/khCRLoysQu1Oud6EKyFqlfuXSv7B5Efl8UkK/4p+uDXHiVNrjxKELFc0SeKEIEk3VCECDihCEH//Z"
+                            alt="">
+                        <h4><b>The Delta Cosplay</b></h4>
+                        <small>Dec 21, 2019</small>
+                    </section>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- footer -->
+        <footer id="footer-section">
+            <div class="footer-body">
+                <div class="footer-body__social-icons">
+                    <div class="footer-body__icons">
+                        <a>
+                        <img class="i"
+                            src="https://fabrics-media.moodfabrics.com/media/wysiwyg/social-icons/Instagram_1.png"
+                            alt="Instagram">
+                        </a>
+                        <a>
+                            <img class="f"
+                                src="https://fabrics-media.moodfabrics.com/media/wysiwyg/social-icons/Facebook_1.png"
+                                alt="Facebook">
+                        </a>
+                        <a>
+                            <img class="p"
+                                src="https://fabrics-media.moodfabrics.com/media/wysiwyg/social-icons/Pintrest_1.png"
+                                alt="Pintrest">
+                        </a>
+                        <a>
+                            <img class="t"
+                                src="https://fabrics-media.moodfabrics.com/media/wysiwyg/social-icons/Twitter_1.png"
+                                alt="Twitter">
+                        </a>
+                        <a>
+                            <img class="y"
+                                src="https://fabrics-media.moodfabrics.com//media/wysiwyg/social-icons/Youtube_1.png"
+                                alt="Youtube">
+                        </a></div>
+
+                </div>
+                <div class="custom-main">
+                    <div class="sub-footer1">
+
+                        <div class="custom-main__maintag-links"><span class="span-class">HELP</span> <br>
+                            <ul class="custom-main__link">
+                                <li><a>FAQ</a></li>
+                                <li><a>Contact Us</a></li>
+                                <li><a>TrackOrder</a></li>
+                                <li><a>MyAccount</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="sub-footer2">
+
+                        <div class="custom-main__maintag-links"><span class="span-class">SHOP</span> <br>
+                            <ul class="custom-main__link">
+                                <li><a href="">FashionFabrics</a></li>
+                                <li><a href="">HomeFabrics</a></li>
+                                <li><a href="">Trims</a></li>
+                                <li><a href="">Buttons</a></li>
+                                <li><a href="">Notions</a></li>
+                                <li><a href="">Mood Shop</a></li>
+                                <li><a href="">Gift Card</a></li>
+                                <li><a href="">Rewards</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="sub-footer3">
+
+                        <div class="custom-main__maintag-links"><span class="span-class">ABOUT</span> <br>
+                            <ul class="custom-main__link">
+                                <li><a href="">About Us</a> </li>
+                                <li><a href="">International Shipping</a></li>
+                                <li><a href="">Custom FabricPrinting</a></li>
+                                <li><a href="">Wholesale Fabrics</a></li>
+                                <li><a href="">FabricDictionary</a></li>
+                                <li><a href="">Sitemap</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="sub-footer4">
+
+                        
+                        <div class="custom-main__maintag-links"><span class="span-class">TERMS AND CONDITIONS</span> <br>
+                            <ul class="custom-main__link">
+                                <li><a href="">Accessibility</a></li>
+                                <li><a href="">Privacy policies</a></li>
+                                <li><a href="">Terms and Conditions</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="sub-footer5">
+
+                        <div class="custom-main__maintag-links">
+                            <div>
+                                <span class="span-class"><strong>GET LATEST NEWS AND UDDATES</strong></span>
+                            </div>
+
+                            <form>
+                                <input class="comment__name comment__name--exa " type="text" placeholder="example@email.com"><span>
+                                    <input class="btn btn--sub" type="submit" value="Submit"></span>
+                            </form>
+                            <div class="sub-footer5__flex-container">
+                                <div class="sub-footer5__list-class"><strong>WEBSITE INQUIRIES</strong><br><br>
+                                    <div><strong>EMAIL: </strong>
+                                        <div >info@moodfabrics.com</div>
+                                    </div>
+
+                                    <div><strong>P <span class="custom-main__link">(855) 630-6663</span> </strong>
+
+                                    </div>
+                                    <br><br>
+                                    <div><strong>WORK HOURS: </strong>
+                                        <div>Mon-Fri: 9am-6pm (EST)</div>
+                                        <div>Sat-Sun: Closed</div>
+                                    </div>
+                                </div>
+                                <div class="sub-footer5__list-class"><strong>NEW YORK CITY</strong> <br><br>
+                                    <ul class="custom-main__link">
+                                        <li>225 W 37th St 3rd Floor</li>
+                                        <li>New York, NY 10018</li>
+                                        <li><strong>P </strong>(212) 730-5003</li>
+                                        <li><strong>F </strong>(212) 221-1932</li>
+                                    </ul>
+                                    <br><strong>STORE HOURS</strong>
+                                    <ul class="custom-main__link">
+                                        <li>Mon-Fri: 9am-7pm</li>
+                                        <li>Sat: 10am-5pm</li>
+                                        <li>Sun: Closed</li>
+                                    </ul>
+                                </div>
+                                <div class="sub-footer5__list-class"><strong>LOS ANGELES</strong> <br><br>
+                                    <ul class="custom-main__link">
+                                        <li>1726 West Pico Blvd</li>
+                                        <li>Los Angeles, CA 90015</li>
+                                        <li><strong>P </strong>(323) 653-6663</li>
+                                        <li><strong>F </strong>(323) 653-6660</li>
+                                    </ul>
+                                    <br><strong>STORE HOURS</strong>
+                                    <ul class="custom-main__link">
+                                        <li>Mon-Fri: 9:30am-6:30pm</li>
+                                        <li>Sat: 10am-6pm</li>
+                                        <li>Sun: Closed</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+
+                <h1><i class="fas fa-comments"></i></h1>
+                <div>
+                    <small style="color: white;">&#169;Copyright 2020 Mood Fabrics</small>
+                </div>
+                <h1><i class="fab fa-accessible-icon"></i></h1>
+
+            </div>
+        </footer>
+
+
+    </div>
+
+
+    <script src="/js/script.js">
+    </script>
+
+</body>
+
+</html>
